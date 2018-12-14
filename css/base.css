@@ -1,0 +1,99 @@
+﻿@charset "utf-8";
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{line-height:1.15;-webkit-text-size-adjust:100%;}
+body{margin:0;}
+main{display:block;}
+h1{margin:.67em 0;font-size:2em;}
+hr{overflow:visible;box-sizing:content-box;height:0;}
+pre{font-size:1em;font-family:monospace;}
+a{background-color:transparent;}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted;}
+b,strong{font-weight:bolder;}
+code,kbd,samp{font-size:1em;font-family:monospace;}
+small{font-size:80%;}
+sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0;}
+sub{bottom:-.25em;}
+sup{top:-.5em;}
+img{border-style:none;}
+button,input,optgroup,select,textarea{margin:0;font-size:100%;font-family:inherit;line-height:1.15;}
+button,input{overflow:visible;}
+button,select{text-transform:none;}
+[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;}
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none;}
+[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText;}
+fieldset{padding:.35em .75em .625em;}
+legend{display:table;box-sizing:border-box;padding:0;max-width:100%;color:inherit;white-space:normal;}
+progress{vertical-align:baseline;}
+textarea{overflow:auto;}
+[type=checkbox],[type=radio]{box-sizing:border-box;padding:0;}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto;}[type=search]{outline-offset:-2px;-webkit-appearance:textfield;}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none;}
+::-webkit-file-upload-button{font:inherit;-webkit-appearance:button;}
+details{display:block;}
+summary{display:list-item;}
+[hidden],template{display:none;}
+
+/* 深圳市静江网络科技有限公司 */
+/* 自定义初始化样式结束 */
+*,*:before,*:after {-webkit-box-sizing:border-box; box-sizing:border-box;margin:0; padding:0;}
+/*:root {font-size: calc(.8vw + .1vh);}*/
+html{font-family: "PingFang SC UltraLight",PingFangSC-Light,"Microsoft YaHei",Tahoma,"Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;font-size: 16px;}
+body{font-size: 1rem;}
+label{cursor: pointer;}
+input{outline: none;}
+[type=button],button,select{cursor: pointer;outline: none;}
+
+textarea{outline: none;resize: none;}
+li{list-style-type:none;}
+a{text-decoration:none;}
+
+.clf:before, .clf:after, .w:before, .w:after {content: " ";display: table;}
+.clf:after, .w:after { clear: both;}
+.clf, .w {*zoom: 1}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.w{width: 1200px;max-width: 100%;margin: auto;}
+/* 自定义初始化样式结束 */
+
+/* 通用头部 */
+.header > .topBar {padding: .8rem 0;}
+.header > .topBar .logo img {display: inline-block; height: 3rem;}
+.header > .topBar .website-desc {display: inline-block; height: 1.5rem;margin: .75rem;}
+.header > .topBar .hotline {padding: .3rem 0 .3rem 3.5rem;background: url("../images/icon_hotline.png") no-repeat left;font-size: .875rem;line-height: 1.4;text-align: center;}
+.header > .topBar .hotline strong{color: #c52620;}
+.header > .navBar {background-color: #4e4e4e;}
+.header > .navBar .navLists {float: left;}
+.header > .navBar .navLists > li {display: inline-block;position:relative;}
+.header > .navBar .navLists a {display: block; min-width: 6.25rem;padding: 0 .6rem;transition: background-color .3s;text-align: center;color: #fff;font-size: 1rem;line-height: 4.375rem;}
+.header > .navBar .navLists .menu {position: absolute;transition: background-color .3s;padding-bottom: .625rem; display: none;z-index:2;}
+.header > .navBar .navLists .menu a {font-size: .875rem;line-height: 1.875rem;}
+.header > .navBar .navLists li:hover a {background-color: #c52620;}
+.header > .navBar .navLists li:hover .menu {background-color: #c52620;position:absolute;}
+
+
+
+.header > .navBar .searchDiv {margin: 1.0875rem 0;}
+.header > .navBar .searchDiv a {display: block;padding: .5rem;}
+.header > .navBar .searchDiv a img {display: block;width: 1.2rem;height: 1.2rem;}
+
+/* 通用底部 */
+.footer {padding-top: 4rem;background: url("../images/img_footerBg.jpg") no-repeat center/cover; color: #fff;}
+.footer > .w {padding: 0 6.25rem;}
+.footer .navLists {text-align: center; margin-bottom: 1rem;}
+.footer .navLists > li {display: inline-block; margin: 0 1.5rem; vertical-align: top;}
+.footer .navLists a {display: block; color: #fff;font-size: 1rem;line-height: 1.5;}
+.footer .navLists .menu a {font-size: .875rem; line-height: 1.875rem; color: rgba(255, 255, 255, .65);text-align: left;}
+.footer .wechat {width: 36%;}
+.footer .wechat .item {display: inline-block; text-align: center; margin-right: 1.4rem;}
+.footer .wechat .item img {display: block; width: 9.375rem; height: 9.375rem; background-color: #fff;}
+.footer .wechat .item p {font-size: .875rem; line-height: 2.8; }
+.footer .intro {width: 64%; border-left: 1px solid #766767; padding: 1rem;}
+.footer .intro p {font-size: 18px; margin-bottom: 1.875rem;}
+.footer .intro p span {font-size: 16px; margin-right: .6rem;}
+.footer .copyright {font-size: 14px; line-height: 1.5; text-align: center; padding: 2rem 0; border-top: 1px solid #766767; margin-top: 1rem;}
+
+
+
