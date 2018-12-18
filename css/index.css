@@ -110,8 +110,6 @@
 .evaluate .content .form .table > div select{width:100%;height:100%;border:none;background:none;font-size:14px;line-height:38px;}
 .evaluate .content .form .table > div select option:first-child{color:red;}
 
-
-
 .evaluate .content .form form > div:last-of-type{width:120px;height:45px;margin:30px auto 0;background:#c52620;border-radius:5px;text-align:center;line-height:45px;}
 .evaluate .content .form form > div:last-of-type input{width:100%;height:100%;background:none;border:none;font-size:14px;color:#fff;text-align:center;line-height:45px;}
 
