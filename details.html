@@ -602,22 +602,81 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-
         <a href="#">立即咨询</a>
     </div>
 
+<!--互动专区-->
+<div class="interaction">
+    <div class="w">
+        <div class="title">互动专区<span>interaction</span></div>
+        <ul class="clf">
+            <li>
+                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
+                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
+            </li>
+            <li>
+                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
+                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
+            </li>
+            <li>
+                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
+                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
+            </li>
+            <li>
+                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
+                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
+            </li>
+            <li>
+                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
+                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
+            </li>
+            <li>
+                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
+                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
+            </li>
+        </ul>
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="我要提问">
+                <input type="text" placeholder="联系方式">
+                <input type="submit" value="提交留言">
+                <input type="submit" value="立即咨询">
+            </form>
+        </div>
+    </div>
+</div>
 
+<!--立即预约-->
+<div class="order">
+    <div class="w">
+        <div class="title">立即预约<span>order</span></div>
+        <div class="form">
+            <form action="" class="clf">
+                <div><span>您的姓名</span><input type="text"></div>
+                <div><span>您的电话</span><input type="text"></div>
+                <div>
+                    <span>移民目的</span>
+                    <select name="" id="1">
+                        <option value="">子女教育</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                </div>
+                <div>
+                    <span>预算费用</span>
+                    <select name="" id="2">
+                        <option value="">300万以下</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                </div>
 
+            </form>
+            <a href="#">立即预约</a>
+        </div>
 
-
-
-
-
-
-
-
-
-
+    </div>
+</div>
 
 <!-- 通用底部 -->
 <div class="footer">
@@ -718,52 +777,11 @@
     tab('tabs');
 
 
-
-    //honor
-    $(function () {
-        var banner = new Swiper ('.honor', {
-            loop: true, // 循环模式选项
-
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // 如果需要分页器
-            pagination: {
-                el: '.banner-pagination',
-                clickable :true
-            }
-        });
-
-    });
-
-    //abouts
+//   顾问
     $(function () {
         var banner = new Swiper ('.adver', {
             loop: true, // 循环模式选项
-
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // 如果需要分页器
-            pagination: {
-                el: '.banner-pagination',
-                clickable :true
-            }
-        });
-
-    });
-
-//   顾问
-    $(function () {
-        var banner = new Swiper ('.about', {
-            loop: true, // 循环模式选项
-
+            autoplay:true,
             // 如果需要前进后退按钮
             navigation: {
                 nextEl: '.swiper-button-next',
