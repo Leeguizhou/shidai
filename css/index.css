@@ -66,7 +66,6 @@
 .timevisa .bottom{width:100%;height:auto;background:url(../images/img_honorBg.png)no-repeat center/100% 100%;margin-top:75px;padding:20px 0 15px;}
 .timevisa .top ul li a{display:block;padding-top:25px;}
 .timevisa .top ul li:hover a{width:96%;height:96%;margin:2% auto 0;border:2px solid #fff;}
-
 .timevisa .bottom .honor{margin-top:30px;}
 .timevisa .bottom .swiper-slide ul{padding-bottom:45px;}
 .timevisa .bottom .swiper-slide ul li{float:left;width:calc((100% - 198px) / 4);margin-right:66px;}
@@ -112,5 +111,114 @@
 
 .evaluate .content .form form > div:last-of-type{width:120px;height:45px;margin:30px auto 0;background:#c52620;border-radius:5px;text-align:center;line-height:45px;}
 .evaluate .content .form form > div:last-of-type input{width:100%;height:100%;background:none;border:none;font-size:14px;color:#fff;text-align:center;line-height:45px;}
+
+
+/*移动端*/
+@media screen and (max-width:750px) {
+    /* banner */
+    .banner{height:12rem;}
+    .banner img {height:100%}
+
+    /* 活动 & 资讯 */
+    .activity {float:none;width:96%;margin:0 auto 0; border: 1px solid #b5b5b5;}
+    .activity .item {padding: 12px .5rem;}
+    .activity .item .img {width: 4rem; height:auto;}
+    .activity .item .img img {display: block; width: 100%; height: 100%;}
+    .activity .item .info {width: 52%; margin: 0 .5rem;}
+    .activity .item .info .c_title {font-size: .9rem;margin-bottom: .5rem;}
+    .activity .item .info .time,
+    .activity .item .info .addr {font-size: .75rem; line-height: 1.6;}
+    .activity .item .order {width:auto;height:auto;line-height:22px;margin: .78rem 0;padding:.5rem;}
+    .activity .item .order:hover {background-color: #1c2122;}
+
+    .news{float:none;width:96%;margin:1rem auto 0;}
+    .news .tabBar{padding:6px 2% 0;background:#fafafa;margin-bottom:.5rem;}
+    .news .tabBar a{display:block;width:calc((100% - 4%)/3);float:left;padding:10px 0;margin-right:2%;text-align:center;}
+    .news .tabBar a:last-child{margin-right:0;}
+    .news > .tabContainer ul{padding:0 2%;}
+    .news > .tabContainer ul li{padding:4px 0 7px;overflow:hidden;position:relative;border-bottom:2px solid #fafafa;}
+    .news > .tabContainer ul li:last-child{margin-bottom:0;}
+    .news > .tabContainer ul li > div{float:left;}
+    .news > .tabContainer ul li .img{width:110px;height:85px;}
+    .news > .tabContainer ul li .img img{width:100%;height:100%;}
+    .news > .tabContainer ul li .text{width:calc(100% - 124px);margin-left:14px;}
+    .news > .tabContainer ul li .text h6 a{font-size:.8rem;color:#0f1415;line-height:24px;}
+    .news > .tabContainer ul li .text p{font-size:.6rem;color:#0f1415;line-height:20px;}
+    .news > .tabContainer ul li .text .more{font-size:12px;color:#0f1415;position:absolute;right:0;top:10px;}
+    .news > .tabContainer ul li .text .time{font-size:12px;color:#0f1415;margin-top:5px;}
+
+    .country{margin-top:50px;}
+    .country .title{margin-bottom:20px;}
+    .country ul li{float:left;width:calc((100% - 10px)/2);height:200px;margin:0 10px 10px 0;position:relative;}
+    .country ul li:nth-child(even){margin-right:0;}
+    .country ul li:nth-child(3){margin-right:10px;}
+    .country ul li .img{width:100%;height:100%;}
+    .country ul li .img img{width:100%;height:100%;}
+    .country ul li p{position:absolute;top:0;left:0;width:100%;height:100%;text-align:center;background:rgba(0,0,0,.3);padding-top:30%;}
+    .country ul li p span:nth-child(1){font-size:16px;}
+    .country ul li p span:nth-child(2){font-size:14px;margin-top:10px;}
+    .country .more{width:42px;height:25px;margin:10px auto 0;}
+    .country ul li .info{display:none;height:auto;padding:10px 10px 10px;  }
+    .country ul li:hover .info{display:block;}
+    .country ul li:hover p{padding-top:15%;}
+
+    .timevisa{padding:50px 0 60px;}
+    .timevisa .top ul li{float:none;width:90%;height:300px;margin:20px auto 0 ;position:relative;}
+    .timevisa .top ul li:last-child{margin-right:auto;}
+    .timevisa .top ul li .img{width:100%;height:100%;}
+    .timevisa .top ul li .img img{width:100%;height:100%;}
+    .timevisa .top ul li .text .icon{width:100px;height:100px;margin:auto;border:1px dashed #fff;border-radius:50%;}
+    .timevisa .top ul li .text .icon img{width:100%;height:100%;}
+    .timevisa .top ul li a{display:block;padding-top:15px;}
+    .timevisa .top ul li .text h6{font-size:16px;color:#fff;}
+    .timevisa .top ul li .text p{font-size:14px;line-height:24px;}
+
+    .timevisa .bottom{margin-top:50px;}
+    .timevisa .bottom .honor{margin-top:30px;}
+    .timevisa .bottom .swiper-slide ul li{float:left;width:calc((100% - 30px) / 4);margin-right:10px;}
+    .timevisa .bottom .swiper-slide ul li:last-child{margin-right:0;}
+    .timevisa .bottom .swiper-slide ul li .img{width:100%;height:100px;}
+    .timevisa .bottom .swiper-slide ul li h6{font-size:12px;color:#000;margin-top:10px;line-height:18px;}
+    .timevisa .bottom .swiper-button-prev{left:10px;top:40%;}
+    .timevisa .bottom .swiper-button-next{right:10px;top:40%;}
+
+
+    .abouts .info{width:100%;height:auto;margin-top:35px;}
+    .abouts .info .video{float:none;width:100%;height:200px;}
+    .abouts .info .video video{width:100%;height:100%;object-fit: fill}
+    .abouts .info .text{float:none;width:100%;height:auto;padding:20px 15px 10px;background:#c52620; }
+    .abouts .info .text h6{font-size:18px;color:#fff;text-align:center;}
+    .abouts .info .text p{font-size:14px;color:#fff;text-align:left;line-height:20px;margin-top:20px;}
+    .abouts .info .text a{display:block;width:120px;height:40px;color:#000;background:#fff;margin:20px auto 0;line-height:40px;}
+    .abouts .about{margin-top:20px;padding-bottom:40px;}
+    .abouts .about .swiper-slide ul li{float:left;width:calc((100% - 10px )/ 2);margin:0 10px 10px 0;position:relative;}
+    .abouts .about .swiper-slide ul li:nth-of-type(even){margin-right:0;}
+    .abouts .about .swiper-slide ul li .text{width:100%;height:auto;padding:20px 0 18px;background:#c52620;position:absolute;bottom:0;text-align:center;}
+
+    .evaluate{padding:50px 0;}
+    .evaluate .content .img{float:none;width:96%;height:250px;margin:auto;}
+    .evaluate .content .img img{width:100%;height:100%;}
+    .evaluate .content .text{float:none;text-align:left;width:96%;margin:10px auto 0;height:auto;}
+    .evaluate .content .text h6{font-size:16px;}
+    .evaluate .content .text p{font-size:14px;margin-top:10px;}
+
+    .evaluate .content .form{margin-top:20px;}
+    .evaluate .content .form .table > div{float:left;width:calc((100% - 10px)/2);margin:0 10px 10px 0;height:40px;border-radius:10px;border:1px solid #b41711;padding:0 5px;}
+    .evaluate .content .form .table > div:nth-of-type(2n){margin-right:0;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

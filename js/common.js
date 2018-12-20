@@ -27,4 +27,20 @@
   }
 
 
-})()
+})();
+
+//移动端菜单弹出
+function navBar(id1,id2){
+    var nav = document.getElementById(id1);
+    var menu = document.getElementById(id2);
+    var cls = nav.className;
+    menu.onclick = function () {
+        if(nav.className == cls){
+            nav.className = cls + ' ' + 'active';
+        }else{
+            nav.className = cls;
+        }
+    }
+
+}
+navBar('navBar','menu')

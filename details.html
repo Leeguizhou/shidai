@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/details.css">
+
 </head>
 <body>
 <!-- 通用头部 -->
@@ -23,7 +24,8 @@
             <p><strong>400-751-7890</strong></p>
         </div>
     </div>
-    <div class="navBar clf">
+    <div class="menu" id="menu"></div>
+    <div class="navBar clf" id="navBar">
         <div class="w">
             <ul class="navLists">
                 <li><a href="index.html">首页</a></li>
@@ -237,38 +239,64 @@
                 <li>
                     <div class="c_title">医疗</div>
                     <div class="img"><img src="images/d_p_2.jpg" alt=""></div>
-                    <p>拥有健全和完善的医疗服务体系<br>
-                        医疗常识得到广泛的普及,实施全民医保</p>
+                    <p>
+                        <span>拥有健全和完善的医疗服务体系</span>
+                        医疗常识得到广泛的普及,实施全民医保
+                    </p>
                     <a href="#">立即咨询</a>
                 </li>
                 <li>
                     <div class="c_title">教育</div>
                     <div class="img"><img src="images/d_p_2.jpg" alt=""></div>
-                    <p>深厚历史底蕴<br>
-                        注重基础教育,高含金量学历国际认可.....</p>
+                    <p>
+                        <span>深厚历史底蕴</span>
+                        注重基础教育,高含金量学历国际认可.....
+                    </p>
                     <a href="#">立即咨询</a>
                 </li>
                 <li>
                     <div class="c_title">房产</div>
                     <div class="img"><img src="images/d_p_2.jpg" alt=""></div>
-                    <p>希腊房地产市场不断回暖<br>
-                        未来还有20%的上升潜力，是投资的知名时期.....</p>
+                    <p>
+                        <span>希腊房地产市场不断回暖</span>
+                        未来还有20%的上升潜力，是投资的知名时期.....
+                    </p>
                     <a href="#">立即咨询</a>
                 </li>
                 <li>
                     <div class="c_title">旅游</div>
                     <div class="img"><img src="images/d_p_2.jpg" alt=""></div>
-                    <p>地理位置知名，三面临海，景色秀丽<br>
+                    <p>
+                        <span>地理位置知名，三面临海，景色秀丽</span>
                         蔚蓝色的海水中散落着上百个大小不一的岛屿.....</p>
                     <a href="#">立即咨询</a>
                 </li>
             </ul>
         </div>
         <div class="clf content_2">
-            <div class="c_left">
-                <img src="images/d_p_3.jpg" alt="">
-                <h6>移民咨询</h6>
+            <div class="c_left ">
+                <div class="swiper-container case_images">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h6>移民咨询</h6>
+                            <img src="images/d_p_3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h6>移民咨询</h6>
+                            <img src="images/d_p_3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h6>移民咨询</h6>
+                            <img src="images/d_p_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination banner-pagination"></div>
+                </div>
             </div>
+
+
+
             <div class="c_center">
                 <ul>
                     <li>
@@ -387,6 +415,7 @@
                 <div>
                     <div class="icon"><img src="images/icon_6.png" alt=""></div>
                     <h6>贵宾服务</h6>
+                    <p>与希腊当地最大房产开发商合作，开发侨外自有房产项目</p>
                 </div>
             </li>
             <li>
@@ -394,6 +423,7 @@
                 <div>
                     <div class="icon"><img src="images/icon_7.png" alt=""></div>
                     <h6>律师团队</h6>
+                    <p>与希腊当地最大房产开发商合作，开发侨外自有房产项目</p>
                 </div>
             </li>
             <li>
@@ -401,6 +431,7 @@
                 <div>
                     <div class="icon"><img src="images/icon_8.png" alt=""></div>
                     <h6>生意团队</h6>
+                    <p>与希腊当地最大房产开发商合作，开发侨外自有房产项目</p>
                 </div>
             </li>
             <li>
@@ -408,6 +439,7 @@
                 <div>
                     <div class="icon"><img src="images/icon_9.png" alt=""></div>
                     <h6>专人接待</h6>
+                    <p>与希腊当地最大房产开发商合作，开发侨外自有房产项目</p>
                 </div>
             </li>
             <li>
@@ -415,6 +447,7 @@
                 <div>
                     <div class="icon"><img src="images/icon_10.png" alt=""></div>
                     <h6>全面规划</h6>
+                    <p>与希腊当地最大房产开发商合作，开发侨外自有房产项目</p>
                 </div>
             </li>
         </ul>
@@ -606,35 +639,106 @@
     </div>
 
 <!--互动专区-->
-<div class="interaction">
+<div class="country-ask">
     <div class="w">
+        <!--这里放标题-->
         <div class="title">互动专区<span>interaction</span></div>
-        <ul class="clf">
-            <li>
-                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
-                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
-            </li>
-            <li>
-                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
-                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
-            </li>
-            <li>
-                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
-                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
-            </li>
-            <li>
-                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
-                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
-            </li>
-            <li>
-                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
-                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
-            </li>
-            <li>
-                <p>希腊不能工作，我去居住没有生活来源怎么办？</p>
-                <p>答：希腊政府可能有这样的考虑：您能购买25万欧....</p>
-            </li>
-        </ul>
+
+        <div class="country-ask-box clf">
+            <div class="country-ask-slide">
+                <div class="slide clf">
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide clf">
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide clf">
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide clf">
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide clf">
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="" target="_blank">
+                            <div class="right">
+                                <p class="question">希腊不能工作，我去居住没有生活来源怎么办？</p>
+                                <p class="answer"><span>答：</span>希腊政府可能有这样的考虑：您能购买25万欧...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--这里放表单-->
         <div class="form">
             <form action="">
                 <input type="text" placeholder="我要提问">
@@ -643,8 +747,27 @@
                 <input type="submit" value="立即咨询">
             </form>
         </div>
+
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--立即预约-->
 <div class="order">
@@ -750,6 +873,7 @@
 
 
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.superslide.2.1.1.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/common.js"></script>
 
@@ -796,6 +920,29 @@
         });
 
     });
+
+    $(function () {
+        var banner = new Swiper ('.case_images', {
+            loop: true, // 循环模式选项
+            autoplay:true,
+            // 如果需要分页器
+            pagination: {
+                el: '.banner-pagination',
+                clickable :true
+            }
+        });
+    });
+
+//  互动专区
+    jQuery(".country-ask-box").slide({
+        mainCell: ".country-ask-slide",
+        autoPlay: true,
+        effect: "topMarquee",
+        vis: 3,
+        interTime: 50
+    });
+
+
 
 
 
