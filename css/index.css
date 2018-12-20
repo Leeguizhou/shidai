@@ -95,6 +95,9 @@
 .abouts .about .swiper-slide ul li .text{width:100%;height:auto;padding:20px 0 18px;background:#c52620;position:absolute;bottom:0;text-align:center;}
 .abouts .about .swiper-slide ul li .text h6{font-size:16px;color:#fff;}
 .abouts .about .swiper-slide ul li .text p{font-size:14px;color:#fff;margin-top:10px;}
+.abouts .about_m{display:none;}
+
+
 
 .evaluate{width:100%;height:auto;text-align:center;padding:75px 0;}
 .evaluate .content{margin-top:30px;}
@@ -190,10 +193,19 @@
     .abouts .info .text h6{font-size:18px;color:#fff;text-align:center;}
     .abouts .info .text p{font-size:14px;color:#fff;text-align:left;line-height:20px;margin-top:20px;}
     .abouts .info .text a{display:block;width:120px;height:40px;color:#000;background:#fff;margin:20px auto 0;line-height:40px;}
-    .abouts .about{margin-top:20px;padding-bottom:40px;}
-    .abouts .about .swiper-slide ul li{float:left;width:calc((100% - 10px )/ 2);margin:0 10px 10px 0;position:relative;}
-    .abouts .about .swiper-slide ul li:nth-of-type(even){margin-right:0;}
-    .abouts .about .swiper-slide ul li .text{width:100%;height:auto;padding:20px 0 18px;background:#c52620;position:absolute;bottom:0;text-align:center;}
+
+    .abouts .about{display:none;}
+
+    .abouts .about_m{display:block;}
+    .abouts .about_m{margin-top:20px;padding-bottom:40px;}
+    .abouts .about_m .swiper-slide{width:100%;}
+    .abouts .about_m .swiper-slide ul li{float:none;width:80%;margin:0 10%;position:relative;}
+    .abouts .about_m .swiper-slide ul li:last-child{margin-right:0;}
+    .abouts .about_m .swiper-slide ul li .img{width:100%;height:100%;}
+    .abouts .about_m .swiper-slide ul li .img img{width:100%;height:100%;}
+    .abouts .about_m .swiper-slide ul li .text{width:100%;height:auto;padding:20px 0 18px;background:#c52620;position:absolute;bottom:0;text-align:center;}
+    .abouts .about_m .swiper-slide ul li .text h6{font-size:16px;color:#fff;}
+    .abouts .about_m .swiper-slide ul li .text p{font-size:14px;color:#fff;margin-top:10px;}
 
     .evaluate{padding:50px 0;}
     .evaluate .content .img{float:none;width:96%;height:250px;margin:auto;}

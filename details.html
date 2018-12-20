@@ -635,6 +635,52 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+<!--金牌顾问_m-->
+        <div class="swiper-container adver_m">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="clf">
+                        <li>
+                            <div class="img"><img src="images/a_1.jpg" alt=""></div>
+                            <div class="text">
+                                <h6>姓名：<span>derek 郭</span></h6>
+                                <p>对房产、金融有丰富的服务史，
+                                    已为500+家庭成功移民......</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="clf">
+                        <li>
+                            <div class="img"><img src="images/a_1.jpg" alt=""></div>
+                            <div class="text">
+                                <h6>姓名：<span>derek 郭</span></h6>
+                                <p>对房产、金融有丰富的服务史，
+                                    已为500+家庭成功移民......</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="clf">
+                        <li>
+                            <div class="img"><img src="images/a_1.jpg" alt=""></div>
+                            <div class="text">
+                                <h6>姓名：<span>derek 郭</span></h6>
+                                <p>对房产、金融有丰富的服务史，
+                                    已为500+家庭成功移民......</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
         <a href="#">立即咨询</a>
     </div>
 
@@ -750,24 +796,6 @@
 
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!--立即预约-->
 <div class="order">
@@ -904,6 +932,25 @@
 //   顾问
     $(function () {
         var banner = new Swiper ('.adver', {
+            loop: true, // 循环模式选项
+            autoplay:true,
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要分页器
+            pagination: {
+                el: '.banner-pagination',
+                clickable :true
+            }
+        });
+
+    });
+
+    $(function () {
+        var banner = new Swiper ('.adver_m', {
             loop: true, // 循环模式选项
             autoplay:true,
             // 如果需要前进后退按钮

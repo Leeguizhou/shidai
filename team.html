@@ -214,6 +214,53 @@
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination banner-pagination"></div>
         </div>
+<!--专家团队_m-->
+        <div class="swiper-container player_m">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="clf">
+                        <li>
+                            <div class="img"><img src="images/t_1.jpg" alt=""></div>
+                            <p class="name">Tom Rosenfeld</p>
+                            <p class="text">
+                                著名投资移民专家<br>
+                                美国EB-5投资移民中国市场开拓者<br>
+                                被合作方政府评为“诚实守信的企业家”
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="clf">
+                        <li>
+                            <div class="img"><img src="images/t_1.jpg" alt=""></div>
+                            <p class="name">Tom Rosenfeld</p>
+                            <p class="text">
+                                著名投资移民专家<br>
+                                美国EB-5投资移民中国市场开拓者<br>
+                                被合作方政府评为“诚实守信的企业家”
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="clf">
+                        <li>
+                            <div class="img"><img src="images/t_1.jpg" alt=""></div>
+                            <p class="name">Tom Rosenfeld</p>
+                            <p class="text">
+                                著名投资移民专家<br>
+                                美国EB-5投资移民中国市场开拓者<br>
+                                被合作方政府评为“诚实守信的企业家”
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination banner-pagination"></div>
+        </div>
+
     </div>
 </div>
 
@@ -327,9 +374,21 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-    //banner
+    //专家团队
     $(function () {
         var banner = new Swiper ('.player', {
+            loop: true, // 循环模式选项
+            autoplay:true,
+            // 如果需要分页器
+            pagination: {
+                el: '.banner-pagination',
+                clickable :true
+            }
+        });
+    });
+
+    $(function () {
+        var banner = new Swiper ('.player_m', {
             loop: true, // 循环模式选项
             autoplay:true,
             // 如果需要分页器

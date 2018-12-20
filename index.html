@@ -704,6 +704,50 @@
       <!-- 如果需要分页器 -->
       <div class="swiper-pagination banner-pagination"></div>
     </div>
+<!--关于时代_m-->
+    <div class="swiper-container about_m">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul class="clf">
+            <li>
+              <div class="img"><img src="images/a_1.jpg" alt=""></div>
+              <div class="text">
+                <h6>陈峰</h6>
+                <p>著名投资移民专家</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="clf">
+            <li>
+              <div class="img"><img src="images/a_1.jpg" alt=""></div>
+              <div class="text">
+                <h6>陈峰</h6>
+                <p>著名投资移民专家</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="clf">
+            <li>
+              <div class="img"><img src="images/a_1.jpg" alt=""></div>
+              <div class="text">
+                <h6>陈峰</h6>
+                <p>著名投资移民专家</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination banner-pagination"></div>
+    </div>
+
+
+
   </div>
 </div>
 
@@ -748,8 +792,6 @@
     </div>
   </div>
 </div>
-
-
 
 
 <!-- 通用底部 -->
@@ -902,7 +944,24 @@ $(function () {
             clickable :true
         }
     });
+});
 
+$(function () {
+    var banner = new Swiper ('.about_m', {
+        loop: true, // 循环模式选项
+        autoplay:true,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要分页器
+        pagination: {
+            el: '.banner-pagination',
+            clickable :true
+        }
+    });
 });
 
 
